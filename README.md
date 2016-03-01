@@ -10,7 +10,7 @@ from math import log, exp
 # Produces the cost to make a glass of lemonade for the day, based upon ingredient cost. 
 # Cost increases over time.
 def days_cost(day):
-	return int(4 + 0.3 * day) # Cents, not dollars
+	return int(4 + 0.3 * day) # cents, not dollars
 
 # Gives the number of glasses of lemonade produced for the day. 
 # Warmer temperatures increases the number of glasses made. 
@@ -23,7 +23,7 @@ def get_glasses(day):
 # Gets the price that a glass of lemonade will be sold at for the day.
 # Signs cost money to make, so when signs are made the price of lemonade goes up to avoid losing money. 
 def get_price(day, assests, sign_cost):
-	return 6 + get_signs(day, assets, sign_cost) # Cents, not dollars
+	return 6 + get_signs(day, assets, sign_cost) # cents, not dollars
 	
 # This function was modified to return the number of signs made based upon a series.
 # Alternates number of signs produced between zero and one per day. 
@@ -46,7 +46,7 @@ def advertising_multiplier(signs):
 
 # Produces the temperature outside for the day. 
 def days_temperature(day):
-	return int(10 + 8.8 * (day % 4)) # Degrees in Celsius, not Fahrenheit
+	return int(10 + 8.8 * (day % 4)) # Degrees in celsius, not fahrenheit
 
 # Increases the likelihood that customers will buy lemonade. 
 # Higher temperatures means people are more dehydrated and more likely to buy a lemonade. 
@@ -88,9 +88,9 @@ print('')
 print('deterministic-lemonade.py: A Deterministic Ten-Day Lemonade Stand Simulation')
 print('(loosely based on the 1979 game "Lemonade Stand" by the Minnesota Educational Computing Consortium)')
 print('')
-initial_assets = 200 # Cents
+initial_assets = 200 # cents
 assets = initial_assets
-sign_cost = 15 # Cents
+sign_cost = 15 # cents
 days = 10
 for day in range(days):
 # Can not have negative days. 
